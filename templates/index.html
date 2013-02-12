@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div id="graph-container"></div>
+	<div id="file-submission">
+	  <button id= "file-submit" class="btn">Upload a .CSV File</button>
+	</div>
+	<div id="column-submission" style="display:none">
+    Submit Column to Graph:
+    <form class="submit-graph">
+      <input name="filename" id='form-filename' style='display:none'></input>
+  	  X-Axis<div class="btn-group" id="x-col-buttons" data-toggle="buttons-checkbox"></div>
+	 <div id= "cols-submit" class="btn"><b>Click to Submit Column</b>(expect delay depending on size of file)</div>  	</div>
+  </form>
+</div>
+{% endblock %}

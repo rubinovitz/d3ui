@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>djen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--Styles -->
+		<link href="/static/css/base.css" rel="stylesheet">
+ </head>
+  <body class="preview" data-spy="scroll" data-target=".subnav" data-offset="50">
+ <div class="navbar navbar-fixed-top">
+   <div class="navbar-inner">
+     <div class="container">
+       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </a>
+       <a class="brand" href="../"></a>
+       <div class="nav-collapse" id="main-menu">
+       </div>
+     </div>
+   </div>
+ </div>
+    <div class="container">
+<header class="jumbotron subhead" id="overview">
+  <div class="row">
+    <div class="span6">
+      <h1>D3 UI</h1>
+      <p class="lead">A dynamic d3.js graphing toolkit.</p>
+    </div>
+    <div class="span6">
+      <div class="bsa well">
+      </div>
+    </div>
+  </div>
+  <div class="subnav">
+    <ul class="nav nav-pills" id="columns">
+		{% block content %}
+		{% endblock %}
+		</ul>
+	</div>
+  <br><br><br><br>
+      <footer class="footer">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+      </footer>
+    </div>
+		{% block script %}
+		{% endblock %}
+    <script src="/static/js/jquery.js"></script>
+     <script type="text/javascript" src="/static/js/d3.js"></script>
+    <script src="/static/js/underscore.js"></script>
+    <script src="/static/js/backbone.js"></script>
+    <script type="text/javascript" src="//api.filepicker.io/v0/filepicker.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/filepicker.js"></script>
+		<script src="/static/js/djen.js"></script>
+    <script src="/static/js/app.js"></script>
+		{% block extrascripts %}
+		{% endblock %}
+  </body>
+</html>
+
